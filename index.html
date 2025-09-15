@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- ========================================
+         Document Meta Information / 文書メタ情報
+         ======================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N.Tanaka Portfolio</title>
+    <meta
+      name="description"
+      content="Tabi-Ride 自転車好きのためのコミュニティサイト"
+    />
+
+    <!-- SEO・アクセシビリティ設定 -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- ========================================
+         External Resources / 外部リソース
+         ======================================== -->
+    <!-- メインスタイルシート -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <!-- Google Fonts読み込み（パフォーマンス最適化済み） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper js CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css">
+    <!-- lottie/player-component CDN-->
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <!-- Swiper JS CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+    
+  </head>
+
+  <body>
+    <!-- ========================================
+         Loading Screen / ローディング画面
+         ======================================== -->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+    </div>
+   
+
+    <!-- ========================================
+         Header / ヘッダー（固定ナビゲーション）
+         ======================================== -->
+    <header class="header">
+      <div class="header-content">
+        <!-- ロゴ（ホームへのリンク） -->
+        <a href="#home" class="logo">Tabi-Ride</a>
+
+        <!-- ナビゲーション -->
+        <nav>
+          <!-- ハンバーガーメニューボタン（モバイル用） -->
+          <button class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- メインナビゲーションメニュー -->
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Photo Gallery </a></li>
+            <li><a target="_blank" href="./safety.html">safety rules</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+    </header>
+
+    <!-- ========================================
+         Main Content / メインコンテンツ
+         ======================================== -->
+    <main class="main-content">
+      <!-- ====================================
+           Hero Section / ヒーローセクション
+           ==================================== -->
+      <section id="home" class="hero">
+        <div class="hero-content fade-in">
+          <h1>Tabi-Ride</h1>
+          <p>ゆったり、自転車を楽しむ仲間と<br class="br-sm-on">つながる場所</p>
+         <p> 自転車でのんびり旅を楽しみたい人が集う<br class="br-sm-on">コミュニティサイト</p>
+        <div class="hero-model lottie-green">
+               <dotlottie-player 
+               class="hero-lot"
+                src="./assets/img/lottie/hero-lot.lottie" 
+                background="transparent" 
+                speed="0.7" 
+                style="width: 400px; height: 400px;" 
+                loop 
+                autoplay>
+              </dotlottie-player>
+               <dotlottie-player 
+               class="hero-lot-bg lottie-custom-color"
+                src="./assets/img/lottie/hero-lot-bg.lottie" 
+                background="transparent" 
+                speed="1" 
+                style="height: 400px;" 
+                loop 
+                autoplay>
+              </dotlottie-player>
+               
+        </div>
+        <!-- ====================================
+           Tabi-Ride Magazine / マガジン
+           ==================================== -->
+
+        <div class="magazine-card">
+        <img src="./assets/img/gallery/tabi-ride-6.webp" 
+        alt="Tabi-Ride 6月号" class="magazine-cover"
+         loading="lazy">
+        <div class="cta-section">
+            <h3 class="cta-title">Tabi-Ride 6月号発売</h3>
+            <a href="#" class="cta-button">詳細はこちら</a>
+        </div>
+
+      </section>
+
+      <!-- ====================================
+           About Section / サイト紹介セクション
+           ==================================== -->
+      <section id="about" class="section" >
+        <div class="section-container">
+          <h2 class="section-title fade-element">Tabi-Rideとは</h2>
+          <div class="about-content">
+            <!-- サイト紹介テキスト -->
+               <div class="container fade-element">
+                    <div class="intro ">
+                        <p>ゆったり、自転車を楽しむ仲間とつながる場所。</p>
+                        <p>自転車でのんびり楽しみたい人が集うコミュニティサイトです。</p>
+                        <p>美味しいものを求めて走ったり、季節の風景を楽しんだり、<br>仲間と一緒に走る楽しさを分かち合いましょう。</p>
+                    </div>
+
+                    <div class="values">
+                        <h3>コミュニティの大切にしていること</h3>
+
+                        <div class="value-item">
+                            <h4>思いやりを第一に</h4>
+                            <p>初心者からベテランまで、みんなが楽しめるように。一人ひとりのペースを尊重し、お互いを思いやる気持ちを大切にしています。</p>
+                        </div>
+
+                        <div class="value-item">
+                            <h4>安全第一</h4>
+                            <p>事故やケガのないよう、交通ルールの遵守と安全運転を心がけています。自転車保険への加入を強く推奨しています。</p>
+                        </div>
+
+                        <div class="value-item">
+                            <h4>美味しいものとの出会い</h4>
+                            <p>地元の名物やスイーツ、隠れた名店を発見するのも旅の楽しみ。グルメ情報の共有で、みんなの旅がもっと豊かになります。</p>
+                        </div>
+                    </div>
+
+                    <div class="steps fade-element">
+                        <h3>参加方法</h3>
+
+                        <div class="step-item">
+                            <h4>1.  mixi2アカウント作成</h4>
+                            <p>まだmixi2アカウントをお持ちでない方は、先にアカウントを作成してください。既にお持ちの方はステップ2へ。</p>
+                             <a href="https://mixi.jp/signup.pl" target="_blank" class="step-button">mixi2に新規登録</a>
+                        </div>
+
+                        <div class="step-item">
+                            <h4>2.  Tabi-Rideコミュニティに参加</h4>
+                             <p>mixi2内のTabi-Rideコミュニティページにアクセスして、参加ボタンを押してください。承認制ではないのですぐに参加できます。</p>
+                            <a href="https://mixi.jp/" target="_blank" class="step-button primary">コミュニティに参加する</a>
+                        </div>
+
+                        <div class="step-item">
+                            <h4>3. 自己紹介で仲間とつながろう</h4>
+                            <p>参加後は自己紹介トピックに投稿してみてください。お住まいの地域、サイクリング歴、好きなコースなどを教えてもらえると、近くのメンバーとつながりやすくなります。</p>
+                        </div>
+                    </div>
+
+                    <div class="faq fade-element">
+                        <h3>よくある質問</h3>
+
+                        <div class="faq-item">
+                            <div class="question">Q. 初心者でも参加できますか？</div>
+                            <div class="answer">A. もちろんです！初心者大歓迎です。走行会の募集時に「初心者向け」と明記されているものから参加してみてください。</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="question">Q. どんな自転車でも参加できますか？</div>
+                            <div class="answer">A. ロードバイク、クロスバイク、ママチャリ、電動アシスト自転車など、どんな自転車でもOKです。</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="question">Q. 一人で参加するのが不安です</div>
+                            <div class="answer">A. 多くのメンバーが一人で参加されています。主催者が丁寧にサポートしますので、安心してご参加ください。</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="question">Q. 走行会の主催はできますか？</div>
+                            <div class="answer">A. 会員であれば誰でも走行会を主催できます。掲示板から募集投稿をしてください。</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="question">Q. 参加費用はかかりますか？</div>
+                            <div class="answer">A. 走行会参加時の交通費や飲食費は各自負担となります。</div>
+                        </div>
+                    </div>
+
+                    <div class="rules fade-element" >
+                        <h3>走行会参加時のお約束</h3>
+                        <ul>
+                            <li>交通ルールの厳守</li>
+                            <li>自転車保険への加入（推奨）</li>
+                            <li>ヘルメットの着用（推奨）</li>
+                            <li>主催者の指示に従う</li>
+                            <li>参加者同士の思いやり</li>
+                            <li>無理をせず自分のペースで</li>
+                        </ul>
+                    </div>
+
+              
+            </div>
+              
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================
+           Activities / 活動紹介セクション
+           ==================================== -->
+      <section id="testimonial" class="section">
+        <div class="section-container fade-element">
+          <div class="testimonial-img "><img src="./assets/img/gallery/cyvling-base-sora.webp" alt="" width="352" height="675"></div>
+          <h2 class="section-title fade-element">メンバー体験談</h2>
+
+          <!-- ==============================================
+               テスティモニアルズ/口コミ/メンバー体験談/Swiperjs/
+               ============================================== -->
+          <div class="testimonials-section">
+              <div class="testimonials-section-header">
+                  <p>Tabi-Rideで素敵な出会いと体験をした<br class="br-sm-on">メンバーの声</p>
+                  <small>※コミュニティメンバーより許可を得て掲載</small>
+              </div>
+
+              <div class="swiper testimonial-swiper">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="testimonial-card">
+                              <div class="member-info">
+                                  <div class="avatar">T</div>
+                                  <div class="member-details">
+                                      <h3>田中 健太さん</h3>
+                                      <div class="info">参加歴: 2年 | 東京都</div>
+                                      <div class="rating">
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="testimonial-text">
+                                  サイクリング初心者だった私でも、みなさんが優しくサポートしてくれて安心して参加できました。毎回違うルートで新しい発見があり、特に多摩川沿いのグルメライドでは地元の美味しいお店をたくさん教えてもらいました。今では週末が楽しみで仕方ありません！
+                              </div>
+                              <div class="tags">
+                                  <span class="tag">初心者歓迎</span>
+                                  <span class="tag">グルメライド</span>
+                                  <span class="tag">多摩川</span>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                          <div class="testimonial-card">
+                              <div class="member-info">
+                                  <div class="avatar">S</div>
+                                  <div class="member-details">
+                                      <h3>佐藤 美咲さん</h3>
+                                      <div class="info">参加歴: 1年半 | 神奈川県</div>
+                                      <div class="rating">
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="testimonial-text">
+                                  転職を機に新しい趣味を始めたくて参加しました。女性一人でも参加しやすい雰囲気で、安全面への配慮も徹底されています。江ノ島までのライドでは途中のカフェで素敵な仲間と出会え、今では一緒に県外遠征も楽しんでいます。人生が豊かになりました！
+                              </div>
+                              <div class="tags">
+                                  <span class="tag">女性参加者</span>
+                                  <span class="tag">江ノ島</span>
+                                  <span class="tag">安全重視</span>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                          <div class="testimonial-card">
+                              <div class="member-info">
+                                  <div class="avatar">M</div>
+                                  <div class="member-details">
+                                      <h3>村田 雄介さん</h3>
+                                      <div class="info">参加歴: 3年 | 埼玉県</div>
+                                      <div class="rating">
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="testimonial-text">
+                                  以前は一人でサイクリングをしていましたが、Tabi-Rideに参加してからは仲間と走る楽しさを知りました。先月の富士五湖ツーリングでは、みんなで励まし合いながら完走できた時の達成感は格別でした。年齢や経験に関係なく、みんなで楽しめるのが魅力です。
+                              </div>
+                              <div class="tags">
+                                  <span class="tag">富士五湖</span>
+                                  <span class="tag">ロングライド</span>
+                                  <span class="tag">チームワーク</span>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                          <div class="testimonial-card">
+                              <div class="member-info">
+                                  <div class="avatar">Y</div>
+                                  <div class="member-details">
+                                      <h3>山本 花子さん</h3>
+                                      <div class="info">参加歴: 8ヶ月 | 東京都</div>
+                                      <div class="rating">
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="testimonial-text">
+                                  子育てが一段落して、何か新しいことを始めたいと思っていた時にTabi-Rideを見つけました。50代からのスタートでしたが、同世代の方も多く、無理のないペースで楽しんでいます。皇居周辺の朝ライドは特におすすめです。健康にも良い影響が出ています！
+                              </div>
+                              <div class="tags">
+                                  <span class="tag">50代</span>
+                                  <span class="tag">朝ライド</span>
+                                  <span class="tag">健康志向</span>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                          <div class="testimonial-card">
+                              <div class="member-info">
+                                  <div class="avatar">K</div>
+                                  <div class="member-details">
+                                      <h3>木村 大輔さん</h3>
+                                      <div class="info">参加歴: 2年半 | 千葉県</div>
+                                      <div class="rating">
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="testimonial-text">
+                                  仕事のストレス発散を求めて参加しましたが、今では生活の一部になっています。房総半島の海沿いライドでは、普段味わえない解放感を感じられます。写真撮影も趣味なので、フォトギャラリーに投稿するのも楽しみの一つです。最高のリフレッシュになっています。
+                              </div>
+                              <div class="tags">
+                                  <span class="tag">房総半島</span>
+                                  <span class="tag">写真撮影</span>
+                                  <span class="tag">ストレス発散</span>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                          <div class="testimonial-card">
+                              <div class="member-info">
+                                  <div class="avatar">A</div>
+                                  <div class="member-details">
+                                      <h3>阿部 祐子さん</h3>
+                                      <div class="info">参加歴: 1年 | 東京都</div>
+                                      <div class="rating">
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                          <span class="star">★</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="testimonial-text">
+                                  大学時代の友人に誘われて参加したのがきっかけです。最初は体力に不安がありましたが、グループ分けが細かく、自分のレベルに合った走行会に参加できるのが嬉しいです。奥多摩の自然ライドでは四季の移り変わりを肌で感じられ、心が洗われる思いです。
+                              </div>
+                              <div class="tags">
+                                  <span class="tag">レベル別</span>
+                                  <span class="tag">奥多摩</span>
+                                  <span class="tag">自然満喫</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+              </div>
+          </div>
+        </div>
+      </section>
+          <!-- ================================
+              Photo Gallery / フォトギャラリー
+               ================================ -->
+      <section id="gallery" class="section">
+          <div class="section-container fade-element">
+              <div class="gallery-section">
+                  <div class="gallery-header">
+                      <h2 class="gallery-title">フォトギャラリー</h2>
+                      <p class="gallery-subtitle">Tabi-Rideの思い出を<br class="br-sm-on">ご覧ください</p>
+                      <p class="attribution">※コミュニティメンバーより<br class="br-sm-on">許可を得て掲載</p>
+                  </div>
+
+                  <div class="category-tabs">
+                      <button class="tab-button active" data-category="all">すべて</button>
+                      <button class="tab-button" data-category="scenery">景色</button>
+                      <button class="tab-button" data-category="gourmet">グルメ</button>
+                      <button class="tab-button" data-category="members">メンバー</button>
+                      <button class="tab-button" data-category="events">イベント</button>
+                  </div>
+
+                  <div class="gallery-grid" id="galleryGrid">
+                      <!-- 景色カテゴリ -->
+                      <div class="gallery-item" data-category="scenery">
+                          <img
+                              src="./assets/img/gallery/3.webp"
+                              alt="桜並木を走る自転車"
+                              class="gallery-image" width="1500" height="967"
+                              loading="lazy"
+                          />
+                          <div class="gallery-content">
+                              <div class="gallery-date">2024年4月7日</div>
+                              <div class="gallery-title-item">桜絶景スポット</div>
+                              <div class="gallery-description">
+                                  満開の桜を見ながら走ってきました。中目黒の絶景スポット。
+                              </div>
+                              <div class="gallery-tags">
+                                  <span class="tag">春</span>
+                                  <span class="tag">桜</span>
+                              </div>
+                          <div class="photo-credit">
+                              <a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/%E6%98%BC%E9%96%93%E3%81%AE%E6%A1%9C%E3%81%AE%E6%9C%A8%E3%81%AE%E9%96%93%E3%81%AE%E9%BB%92%E3%81%84%E3%82%B3%E3%83%B3%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%88%E8%88%97%E8%A3%85-OhOun94xtF8" 
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              >
+                              Photo by Finan Akbar on Unsplash
+                              </a>
+                          </div>
+                          </div>
+                      </div> 
+
+                      <div class="gallery-item" data-category="scenery">
+                          <img
+                              src="./assets/img/gallery/2.webp"
+                              alt="富士山を望む"
+                              class="gallery-image" width="1500" height="976"
+                              loading="lazy"
+                          />
+                          <div class="gallery-content">
+                              <div class="gallery-date">2024年5月15日</div>
+                              <div class="gallery-title-item">富士山を望む絶景ポイント</div>
+                              <div class="gallery-description">
+                                  清々しい朝の空気の中、雄大な富士山の姿に感動しました。
+                              </div>
+                              <div class="gallery-tags">
+                                  <span class="tag">富士山</span>
+                                  <span class="tag">絶景</span>
+                                  <span class="tag">朝ライド</span>
+                              </div>
+                              <div class="photo-credit">
+                              <a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/%E5%AF%8C%E5%A3%AB%E5%B1%B1-n--CMLApjfI" 
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              >
+                              Photo by Manuel Cosentino on Unsplash
+                              </a>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- グルメカテゴリ -->
+                      <div class="gallery-item" data-category="gourmet">
+                          <img
+                              src="./assets/img/gallery/4.webp"
+                              alt="カフェでのひととき"
+                              class="gallery-image" width="1500" height="1001"
+                              loading="lazy"
+                          />
+                          <div class="gallery-content">
+                              <div class="gallery-date">2024年3月20日</div>
+                              <div class="gallery-title-item">サイクリストに人気のカフェ</div>
+                              <div class="gallery-description">
+                                  美味しいコーヒーとケーキで疲れを癒しました。店主の方もとても親切でした。
+                              </div>
+                              <div class="gallery-tags">
+                                  <span class="tag">カフェ</span>
+                                  <span class="tag">コーヒー</span>
+                                  <span class="tag">休憩</span>
+                              </div>
+                              <div class="photo-credit">
+                              <a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/two-bikes-parked-beside-wall-inside-room-OXXsAafHDeo" 
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              >
+                              Photo by Roman Bozhko on Unsplash
+                              </a>
+                          </div>
+                          </div>
+                      </div>
+
+                      <div class="gallery-item" data-category="gourmet">
+                          <img
+                              src="./assets/img/gallery/5.webp"
+                              alt="海鮮丼"
+                              class="gallery-image" width="1500" height="1002"
+                              loading="lazy"
+                          />
+                          <div class="gallery-content">
+                              <div class="gallery-date">2024年6月3日</div>
+                              <div class="gallery-title-item">漁港直送の海鮮丼</div>
+                              <div class="gallery-description">
+                                  湘南ライドの締めくくりに新鮮な海鮮丼をいただきました。絶品でした！
+                              </div>
+                              <div class="gallery-tags">
+                                  <span class="tag">海鮮丼</span>
+                                  <span class="tag">湘南</span>
+                                  <span class="tag">ランチ</span>
+                              </div>
+                              <div class="photo-credit">
+                              <a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/%E3%82%B7%E3%83%BC%E3%83%95%E3%83%BC%E3%83%89%E3%83%87%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%E5%85%A5%E3%82%8A%E3%83%9D%E3%83%83%E3%83%88-9r5kHbw51fk" 
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              >
+                              Photo by Jesse Ballantyne on Unsplash
+                              </a>
+                          </div>
+                          </div>
+                      </div>
+
+                      <!-- メンバーカテゴリ -->
+                      <div class="gallery-item" data-category="members">
+                          <img
+                              src="./assets/img/gallery/6.webp"
+                              alt="集合写真"
+                              class="gallery-image" width="1500" height="1000"
+                              loading="lazy"
+                          />
+                          <div class="gallery-content">
+                              <div class="gallery-date">2024年4月29日</div>
+                              <div class="gallery-title-item">GWロングライド集合写真</div>
+                              <div class="gallery-description">
+                                  総勢7名でのロングライド。みんなの笑顔が印象的でした。
+                              </div>
+                              <div class="gallery-tags">
+                                  <span class="tag">集合写真</span>
+                                  <span class="tag">GW</span>
+                                  <span class="tag">ロングライド</span>
+                              </div>
+                              <div class="photo-credit">
+                              <a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%81%AB%E4%B9%97%E3%81%A3%E3%81%9F%E4%BA%BA%E3%80%85%E3%81%AE%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97-SxQhfjLHKe4" 
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              >
+                              Photo by Tuvalum on Unsplash
+                              </a>
+                          </div>
+                          </div>
+                      </div>
+
+                      <div class="gallery-item" data-category="members">
+                          <img
+                              src="./assets/img/gallery/7.webp"
+                              alt="メンバーの笑顔"
+                              class="gallery-image" width="1500" height="1000"
+                              loading="lazy"
+                          />
+                          <div class="gallery-content">
+                              <div class="gallery-date">2024年5月25日</div>
+                              <div class="gallery-title-item">初参加メンバー</div>
+                              <div class="gallery-description">
+                                  今回初参加メンバーです。こう見えて実は高校生です。
+                              </div>
+                              <div class="gallery-tags">
+                                  <span class="tag">初参加</span>
+                                  <span class="tag">新メンバー</span>
+                              </div>
+                              <div class="photo-credit">
+                              <a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%81%AB%E4%B9%97%E3%81%A3%E3%81%9F%E4%BA%BA%E3%80%85%E3%81%AE%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97-SxQhfjLHKe4" 
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              >
+                              Photo by Oleg Kukharuk on Unsplash
+                              </a>
+                          </div>
+                          </div>
+                      </div>
+
+                      <!-- イベントカテゴリ -->
+                      <div class="gallery-item" data-category="events">
+                          <img
+                              src="./assets/img/gallery/8.webp"
+                              alt="チャリティイベント"
+                              class="gallery-image" width="1500" height="1000"
+                              loading="lazy"
+                          />
+                          <div class="gallery-content">
+                              <div class="gallery-date">2024年6月10日</div>
+                              <div class="gallery-title-item">チャリティサイクリングイベント</div>
+                              <div class="gallery-description">
+                                  地域の清掃活動とサイクリングを組み合わせたイベント。地域貢献も大切にしています。
+                              </div>
+                              <div class="gallery-tags">
+                                  <span class="tag">チャリティ</span>
+                                  <span class="tag">清掃活動</span>
+                                  <span class="tag">地域貢献</span>
+                              </div>
+                              <div class="photo-credit">
+                              <a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/%E9%80%9A%E3%82%8A%E3%82%92%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%81%A7%E8%B5%B0%E3%82%8B%E5%A4%A7%E5%8B%A2%E3%81%AE%E4%BA%BA%E3%80%85-tlePEvgvFLo"
+                              target="_blank"
+                              >
+                              Photo by Julia Taubitz on Unsplash
+                              </a>
+                          </div>
+                          </div>
+                      </div>
+
+                      <div class="gallery-item" data-category="events">
+                          <img
+                              src="./assets/img/gallery/9.webp"
+                              alt="夜景ライド"
+                              class="gallery-image" width="1500" height="938"
+                              loading="lazy"
+                          />
+                          <div class="gallery-content">
+                              <div class="gallery-date">2024年7月1日</div>
+                              <div class="gallery-title-item">夏の夜景ライド</div>
+                              <div class="gallery-description">
+                                  涼しい夜風を感じながらの特別な夜景ライド。都市の美しさを再発見しました。
+                              </div>
+                              <div class="gallery-tags">
+                                  <span class="tag">夜景</span>
+                                  <span class="tag">夏</span>
+                                  <span class="tag">特別企画</span>
+                              </div>
+                              <div class="photo-credit">
+                              <a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/%E5%B1%B1%E3%82%92%E8%83%8C%E6%99%AF%E3%81%AB%E3%81%97%E3%81%9F%E6%B9%96%E3%81%AE%E5%A4%9C%E6%99%AF-R6me1o4eWxg"
+                              target="_blank"
+                              >
+                              Photo by Takashi Miyazaki on Unsplash
+                              </a>
+                          </div>
+                          </div>
+                      </div>
+                     
+                  </div>
+              </div>
+              
+          </div>
+           <!-- モーダル -->
+          <div id="imageModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img id="modalImage" class="modal-image" src="" alt="" />
+            </div>
+          </div>
+      </section>
+
+      <!-- ====================================
+           Contact Section / お問い合わせセクション
+           ==================================== -->
+      <section id="contact" class="section contact">
+        <div class="section-container">
+          <h2 class="section-title fade-element">Contact</h2>
+          <div class="contact-content fade-element">
+            <p
+              class="contact-intro"
+            >
+            <div class="portfolio-notice" style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #007bff;">
+              <p style="margin: 0; color: #6c757d;">
+                <strong>※ ポートフォリオ用デモサイト</strong><br>
+                このコンタクトフォームは表示のみで、実際の送信は行われません。
+              </p>
+            </div>
+
+            <!-- ----------------------------------
+                 Contact Form / お問い合わせフォーム
+                 ---------------------------------- -->
+            <div class="contact-form-wrap animate-fade-in" id="contact">
+              <div class="contact-form-container">
+                <!-- 送信完了メッセージ（初期は非表示） -->
+                <div
+                  class="success-message"
+                  id="success-message"
+                  style="display: none"
+                >
+                  メッセージが送信されました。ありがとうございます！
+                </div>
+
+                <!-- Formspree連携フォーム -->
+                <form
+                  class="contact-form"
+                  action="#"
+                  method="POST"
+                  id="contactForm"
+                >
+
+                  <!-- お名前 -->
+                  <div class="form-group">
+                    <label for="name" class="form-label">
+                      お名前 <span style="color: red">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+
+                  <!-- メールアドレス -->
+                  <div class="form-group">
+                    <label for="email" class="form-label">
+                      メールアドレス <span style="color: red">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+
+                  <!-- 電話番号（任意） -->
+                  <div class="form-group">
+                    <label for="phone" class="form-label">電話番号</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="form-input"
+                    />
+                  </div>
+
+                  <!-- 件名 -->
+                  <div class="form-group">
+                    <label for="subject" class="form-label">
+                      件名 <span style="color: red">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+
+                  <!-- メッセージ本文 -->
+                  <div class="form-group">
+                    <label for="message" class="form-label">
+                      メッセージ <span style="color: red">*</span>
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="form-textarea"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <!-- 送信ボタン -->
+                  <button type="submit" class="submit-button">送信する</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ========================================
+     Footer / フッター
+     ======================================== -->
+<footer class="footer">
+  <div class="footer-content">
+    <!-- フッターメイン情報 -->
+    <div class="footer-main">
+      <!-- ロゴ・名前 -->
+      <div class="footer-brand">
+        <h2>Tabi-Ride</h2>
+        <p>ゆったり自転車を楽しむ仲間とつながる場所</p>
+      </div>
+
+      <!-- ナビゲーションリンク -->
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a target="_blank" href="./safety.html">safety rules</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a target="_blank" href="./persona.html">ペルソナ</a></li>
+          <li><a target="_blank" href="./KGI.html">KGI</a></li>
+        </ul>
+      </div>
+
+
+      <!-- 外部リンク -->
+      <div class="footer-links">
+        <h4>Thanks</h4>
+        <ul>
+          <li><a href="https://unsplash.com/ja" target="_blank" rel="noopener">unsplash</a></li>
+          <li><a href="https://lottiefiles.com/jp/" target="_blank" rel="noopener">LottieFiles</a></li>
+          <!-- 他のSNSがあれば追加 -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- フッターボトム -->
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <p>&copy; 2025 Tabi-Ride. All rights reserved.</p>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+
+
+
+    <!-- ========================================
+         JavaScript / スクリプト読み込み
+         ======================================== -->
+    <!-- メインJavaScriptファイル -->
+
+
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/swiper.js"></script>
+
+
+  </body>
+</html>
+
+<!-- 
+========================================
+Development Notes / 開発メモ
+========================================
+- Formspree連携URL: https://formspree.io/f/mldnddnk
+- 3Dモデルファイルパス: /assets/img/glb/
+- 画像はWebP形式でlazy loading対応
+========================================
+-->

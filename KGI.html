@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tabi-ride プロジェクト戦略設計書</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.8;
+        margin: 2rem;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #2c3e50;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 1rem 0;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 0.5rem;
+        text-align: left;
+      }
+      th {
+        background-color: #f0f0f0;
+      }
+      section {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🚴 tabi-ride プロジェクト戦略設計書</h1>
+
+    <section>
+      <h2>【プロジェクト名】</h2>
+      <p><strong>tabi-ride（タビライド）</strong></p>
+    </section>
+
+    <section>
+      <h2>【概要】</h2>
+      <p>
+        自転車による旅を楽しむ人々が集まり、つながり、記録を共有できるコミュニティサイト。<br />
+        ヒルクライムやロングライド、のんびりライドなど、多様なスタイルのライダーを対象とし、自転車×旅の魅力を分かち合えるUXを提供する。
+      </p>
+    </section>
+
+    <section>
+      <h2>📊 KGI（Key Goal Indicator）</h2>
+      <h3>パターンA：意欲的なKGI（ポートフォリオ用）</h3>
+      <ul>
+        <li>ローンチ一ヶ月以内に月間アクティブユーザー1,000人</li>
+      </ul>
+      <h3>パターンB：現実的な階段別KGI</h3>
+      <table>
+        <tr>
+          <th>期間</th>
+          <th>KGI</th>
+        </tr>
+        <tr>
+          <td>初月</td>
+          <td>登録ユーザー300人 / MAU100人</td>
+        </tr>
+        <tr>
+          <td>3ヶ月</td>
+          <td>MAU500人</td>
+        </tr>
+        <tr>
+          <td>6ヶ月</td>
+          <td>MAU1,000人</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>✨ KSF（Key Success Factor）</h2>
+      <ul>
+        <li>気軽に投稿、参加できるUI/UX</li>
+        <li>SNS風に他人の旅を見られる機能</li>
+        <li>情報分類やエリア別のタグ</li>
+        <li>一歩目の参加を勧めるUI</li>
+        <li>互いに応援しあえる仕組み</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>✅ KPI (Key Performance Indicator)</h2>
+      <h3>パターンAのKGI対応（1ヶ月KGI）</h3>
+      <table>
+        <tr>
+          <th>KPI</th>
+          <th>1ヶ月内目標</th>
+        </tr>
+        <tr>
+          <td>登録ユーザー数</td>
+          <td>1,500人</td>
+        </tr>
+        <tr>
+          <td>MAU</td>
+          <td>1,000人 (KGI)</td>
+        </tr>
+        <tr>
+          <td>総投稿数</td>
+          <td>800件</td>
+        </tr>
+        <tr>
+          <td>反応率 (いいね/コメント)</td>
+          <td>3件/投稿</td>
+        </tr>
+        <tr>
+          <td>再訪問率</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <td>モバイル投稿率</td>
+          <td>70%</td>
+        </tr>
+        <tr>
+          <td>プロフィール設定率</td>
+          <td>80%</td>
+        </tr>
+      </table>
+
+      <h3>パターンBのKGI対応（6ヶ月計画）</h3>
+      <table>
+        <tr>
+          <th>KPI</th>
+          <th>目標</th>
+        </tr>
+        <tr>
+          <td>MAU</td>
+          <td>100 (初月) → 1,000 (終期)</td>
+        </tr>
+        <tr>
+          <td>月間新規投稿数</td>
+          <td>500件</td>
+        </tr>
+        <tr>
+          <td>反応率</td>
+          <td>3件/投稿</td>
+        </tr>
+        <tr>
+          <td>再訪問率</td>
+          <td>60%</td>
+        </tr>
+        <tr>
+          <td>投稿続行率 (3ヶ月後)</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <td>タグ利用率</td>
+          <td>70%</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>📆 AP（Action Plan）</h2>
+      <h3>ローンチ期</h3>
+      <ul>
+        <li>サイトストラクチャーの整備</li>
+        <li>Twitter/インスタグラムで情報発信</li>
+        <li>プロトタイプ別のデモ投稿</li>
+        <li>ハッシュタグカンペーンの実施</li>
+      </ul>
+      <h3>3ヶ月期</h3>
+      <ul>
+        <li>情報カテゴライズ・タグの改善</li>
+        <li>ユーザー投稿をピックアップ表示</li>
+        <li>コメントランキングや追加機能</li>
+      </ul>
+      <h3>6ヶ月期</h3>
+      <ul>
+        <li>マイレージ投稿の紹介ページ</li>
+        <li>エリア別のサイクルマップ実装</li>
+        <li>ユーザーレベル別の紹介/紹介順位表</li>
+      </ul>
+    </section>
+  </body>
+</html>

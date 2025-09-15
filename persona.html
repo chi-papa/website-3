@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabi-Ride ペルソナ設定</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Noto Sans JP", sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+        color: white;
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
+
+      .target-section {
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      .target-section h2 {
+        color: #667eea;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+
+      .target-info {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .target-item {
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        color: white;
+        padding: 15px 25px;
+        border-radius: 25px;
+        font-weight: bold;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .personas {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 30px;
+      }
+
+      .persona-card {
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .persona-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+      }
+
+      .persona-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+      }
+
+      .persona-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: white;
+        margin-right: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .persona-name {
+        flex: 1;
+      }
+
+      .persona-name h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      .persona-name p {
+        color: #666;
+        font-size: 1rem;
+      }
+
+      .persona-details {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+
+      .detail-item {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 10px;
+        border-left: 4px solid #667eea;
+      }
+
+      .detail-item h4 {
+        color: #667eea;
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .detail-item p {
+        color: #333;
+        font-size: 1rem;
+        line-height: 1.4;
+      }
+
+      .highlight {
+        background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+        color: #333;
+        padding: 20px;
+        border-radius: 15px;
+        margin-top: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .highlight h4 {
+        color: #d63384;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .personas {
+          grid-template-columns: 1fr;
+        }
+
+        .persona-details {
+          grid-template-columns: 1fr;
+        }
+
+        .target-info {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🚴‍♂️ Tabi-Ride ペルソナ設定</h1>
+        <p>ターゲットユーザーの具体的な人物像</p>
+      </div>
+
+      <div class="target-section">
+        <h2>🎯 メインターゲット</h2>
+        <div class="target-info">
+          <div class="target-item">35-55歳</div>
+          <div class="target-item">サイクリング愛好者</div>
+          <div class="target-item">mixi世代</div>
+          <div class="target-item">経済的余裕あり</div>
+          <div class="target-item">大人のサイクリング志向</div>
+        </div>
+      </div>
+
+      <div class="personas">
+        <div class="persona-card">
+          <div class="persona-header">
+            <div class="persona-avatar">👨‍💼</div>
+            <div class="persona-name">
+              <h3>田中 健一さん</h3>
+              <p>45歳・男性・営業部長</p>
+            </div>
+          </div>
+
+          <div class="persona-details">
+            <div class="detail-item">
+              <h4>家族構成</h4>
+              <p>妻、高校生の息子</p>
+            </div>
+
+            <div class="detail-item">
+              <h4>サイクリング歴</h4>
+              <p>8年</p>
+            </div>
+
+            <div class="detail-item">
+              <h4>愛車</h4>
+              <p>ロードバイク<br />（30万円クラス）</p>
+            </div>
+
+            <div class="detail-item">
+              <h4>活動パターン</h4>
+              <p>月2-3回<br />土日の朝活中心</p>
+            </div>
+
+            <div class="detail-item">
+              <h4>mixi利用状況</h4>
+              <p>昔からのユーザー<br />趣味コミュニティ複数参加</p>
+            </div>
+          </div>
+
+          <div class="highlight">
+            <h4>🤔 お悩み・ニーズ</h4>
+            <p>
+              「一人で走るのも良いが、同世代と情報交換したい。安全で楽しいルートや、途中で立ち寄れるグルメスポットを知りたい。」
+            </p>
+          </div>
+        </div>
+
+        <div class="persona-card">
+          <div class="persona-header">
+            <div class="persona-avatar">👩‍💼</div>
+            <div class="persona-name">
+              <h3>佐藤 美香さん</h3>
+              <p>42歳・女性・パート勤務</p>
+            </div>
+          </div>
+
+          <div class="persona-details">
+            <div class="detail-item">
+              <h4>家族構成</h4>
+              <p>夫、中学生の娘</p>
+            </div>
+
+            <div class="detail-item">
+              <h4>サイクリング歴</h4>
+              <p>3年</p>
+            </div>
+
+            <div class="detail-item">
+              <h4>愛車</h4>
+              <p>クロスバイク</p>
+            </div>
+
+            <div class="detail-item">
+              <h4>活動パターン</h4>
+              <p>平日午前中<br />近場の観光地巡り</p>
+            </div>
+
+            <div class="detail-item">
+              <h4>mixi利用状況</h4>
+              <p>料理・子育て<br />コミュニティ参加経験</p>
+            </div>
+          </div>
+
+          <div class="highlight">
+            <h4>🤔 お悩み・ニーズ</h4>
+            <p>
+              「女性でも安心して参加できるグループを探している。初心者でも気軽に相談できる環境が欲しい。家族の時間も大切にしたい。」
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

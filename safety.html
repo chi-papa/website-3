@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabi-Ride 安全情報・ルール</title>
+    <style>
+      :root {
+        /* フォント */
+        --serif: "Noto Serif JP", serif;
+        --sans-serif: "Noto Sans JP", sans-serif;
+
+        /* カラーパレット */
+        --main-color: #f7f7f7; /* メインカラー（背景） */
+        --text-color: #284276; /* テキストカラー */
+        --accent-color: #e67e22; /* アクセントカラー（オレンジ） */
+        --white: #ffffff; /* 白 */
+        --shadow: rgba(0, 0, 0, 0.1); /* 影色 */
+        --sub-accent-color: #fff5f5; /* 薄オレンジ */
+        --header-bg-color: rgba(247, 247, 247, 0.95);
+
+        /* アニメーション */
+        --transition: all 0.3s ease; /* 共通トランジション */
+      }
+
+      body {
+        font-family: var(--sans-serif);
+        line-height: 1.6;
+        padding: 1em;
+        max-width: 800px;
+        margin: auto;
+        background: var(--white);
+        color: var(--text-color);
+      }
+
+      h1 {
+        color: var(--text-color);
+        border-bottom: 3px solid var(--accent-color);
+        padding-bottom: 0.5em;
+        margin-bottom: 1.5em;
+      }
+
+      h2 {
+        color: var(--text-color);
+        border-left: 4px solid var(--accent-color);
+        padding-left: 1em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+      }
+
+      h3 {
+        color: var(--text-color);
+      }
+
+      blockquote {
+        background: var(--sub-accent-color);
+        border-left: 4px solid var(--accent-color);
+        margin: 1em 0;
+        padding: 1em;
+        border-radius: 5px;
+        color: var(--text-color);
+      }
+
+      .link-box {
+        background: var(--main-color);
+        padding: 1.5em;
+        border-radius: 8px;
+        margin: 1em 0;
+        border: 1px solid rgba(40, 66, 118, 0.1);
+        box-shadow: 0 2px 4px var(--shadow);
+      }
+
+      .danger {
+        background: var(--sub-accent-color);
+        border-left: 4px solid var(--accent-color);
+        padding: 1em;
+        margin: 1em 0;
+        border-radius: 5px;
+        color: var(--text-color);
+      }
+
+      ul {
+        padding-left: 1.2em;
+      }
+
+      li {
+        margin-bottom: 0.5em;
+      }
+
+      a {
+        color: var(--accent-color);
+        text-decoration: none;
+        transition: var(--transition);
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: #d35400;
+      }
+
+      strong {
+        color: var(--text-color);
+        font-weight: 600;
+      }
+
+      /* アクセントボックス */
+      .accent-box {
+        background: linear-gradient(
+          135deg,
+          var(--main-color) 0%,
+          var(--white) 100%
+        );
+        border: 2px solid var(--accent-color);
+        border-radius: 10px;
+        padding: 1.5em;
+        margin: 1.5em 0;
+        box-shadow: 0 4px 6px var(--shadow);
+      }
+
+      /* フッター */
+      .footer {
+        text-align: center;
+        margin-top: 3em;
+        padding-top: 2em;
+        border-top: 1px solid rgba(40, 66, 118, 0.2);
+        font-size: 0.9em;
+        color: rgba(40, 66, 118, 0.7);
+      }
+
+      /* ボタンスタイル */
+      .nav-button {
+        background: green;
+        color: white;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+        transition: var(--transition);
+      }
+
+      .nav-button:hover {
+        background: #006600;
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🚦 安全情報・ルールまとめ</h1>
+    <p>
+      ライドをもっと楽しく、そして安全に。初心者からベテランまで、守ってほしい大切なルールとマナーをまとめました。
+    </p>
+
+    <h2>🪖 ヘルメットの重要性</h2>
+    <p>
+      2023年より全国で全年齢に
+      <strong>ヘルメット着用の努力義務</strong> が課されました。
+    </p>
+    <ul>
+      <li>
+        自転車事故の致命傷の約6割が <strong>頭部損傷</strong>（<a
+          href="https://www.keishicho.metro.tokyo.lg.jp/"
+          target="_blank"
+          >警視庁統計</a
+        >より）
+      </li>
+      <li>時速20km程度でも転倒すれば命に関わることがあります</li>
+      <li><strong>JCF認証</strong>マーク付きのヘルメットを推奨</li>
+    </ul>
+    <blockquote>
+      🚨「ゆっくり走るから大丈夫」は大間違い！突然の落車や接触は誰にでも起こる！
+    </blockquote>
+
+    <h2>🛑 道路の通行ルール完全版</h2>
+
+    <h3>車道通行が原則</h3>
+    <p>
+      自転車は「軽車両」。道路交通法で<strong>車道の左側通行</strong>が義務づけられています。
+    </p>
+    <ul>
+      <li>
+        右側通行は<strong>正面衝突</strong>のリスクが高く、ドライバーからも視認されにくい
+      </li>
+      <li>保険の過失割合で<strong>不利になる可能性</strong>も</li>
+      <li>車道では<strong>左側端</strong>を通行する</li>
+    </ul>
+
+    <h3>歩道通行時の重要ルール</h3>
+    <p>以下の場合のみ歩道通行が可能です：</p>
+    <ul>
+      <li>「自転車歩道通行可」の標識がある場合</li>
+      <li>13歳未満の子どもや70歳以上の高齢者</li>
+      <li>車道通行が危険な場合</li>
+    </ul>
+    <p><strong>歩道では必ず：</strong></p>
+    <ul>
+      <li><strong>徐行運転</strong>（すぐに止まれる速度）</li>
+      <li>
+        <strong>歩行者が最優先</strong>（歩行者の妨げになる場合は一時停止）
+      </li>
+      <li>歩道の<strong>車道寄り</strong>を通行</li>
+    </ul>
+
+    <h3>自転車専用道路・自転車レーン</h3>
+    <ul>
+      <li><strong>自転車道</strong>：自転車専用の道路（青い舗装が目印）</li>
+      <li><strong>自転車レーン</strong>：車道に設けられた自転車専用部分</li>
+      <li>これらも<strong>左側通行</strong>が基本</li>
+    </ul>
+
+    <blockquote>
+      💬「逆走」は自分も相手も危険にさらす行為。ゼロにしていこう！
+    </blockquote>
+
+    <h2>🔊 聴覚の重要性とイヤホン規制</h2>
+    <div class="danger">
+      <h3>⚠️ 2024年11月より法改正で厳格化！</h3>
+      <p>
+        2024年11月から道路交通法が改正され、自転車運転中の「ながらスマホ」が禁止され、罰則が強化されました。
+      </p>
+    </div>
+
+    <h3>イヤホン・ヘッドホンの使用について</h3>
+    <ul>
+      <li>安全運転に必要な音や声が聞こえない状態での自転車運転が禁止</li>
+      <li><strong>両耳イヤホン</strong>は基本的にNG</li>
+      <li><strong>片耳でも</strong>周囲の音が聞こえない音量は危険</li>
+      <li>骨伝導イヤホンでも周囲の音を妨げる場合は問題</li>
+    </ul>
+
+    <h3>なぜ聴覚が重要？</h3>
+    <ul>
+      <li>車のエンジン音やクラクションの認識</li>
+      <li>歩行者の足音や声の把握</li>
+      <li>緊急車両のサイレン音の確認</li>
+      <li>他のサイクリストからの声かけの察知</li>
+    </ul>
+
+    <blockquote>
+      🎧 音楽やポッドキャストを楽しみたい気持ちは分かりますが、安全第一で！
+    </blockquote>
+    <ul>
+      <li>急ブレーキNG。後方ライダーに配慮</li>
+      <li>追い越し時は「右から抜きます！」などの声かけ</li>
+      <li>信号は必ず全員で止まる</li>
+      <li>車間は<strong>1台分以上</strong>が基本</li>
+    </ul>
+
+    <div class="link-box">
+      📄 参考資料：<br />
+      <a href="https://tourdetohoku.jp/pdf/safety_guide.pdf" target="_blank"
+        >ツール・ド・東北 安全走行ガイド（PDF）</a
+      >
+    </div>
+
+    <h2>⚖️ 2024年法改正による新しい罰則</h2>
+    <div class="danger">
+      <h3>厳罰化された項目（2024年11月より）</h3>
+      <ul>
+        <li><strong>ながらスマホ</strong>：通話や画面注視が禁止・罰則強化</li>
+        <li><strong>酒気帯び運転</strong>：新たに罰則対象</li>
+        <li>
+          <strong>イヤホン使用</strong>：安全運転に支障がある場合は処罰対象
+        </li>
+      </ul>
+      <p>
+        ※これらの違反は<strong>前科</strong>となり、就職や各種手続きに影響する可能性があります
+      </p>
+    </div>
+
+    <h2>🦺 装備チェックリスト</h2>
+    <h3>必須装備</h3>
+    <ul>
+      <li><strong>ヘルメット</strong>（努力義務・推奨）</li>
+      <li><strong>前照灯・尾灯</strong>（夜間は義務）</li>
+      <li><strong>反射器材</strong>（後方確認用）</li>
+      <li><strong>ベル</strong>（法定装備・必須）</li>
+      <li><strong>ブレーキ</strong>（前後輪）</li>
+    </ul>
+
+    <h3>推奨装備</h3>
+    <ul>
+      <li>グローブ（手の保護・滑り止め）</li>
+      <li>アイウェア（風や虫から目を保護）</li>
+      <li>ボトル・水分補給用品</li>
+      <li>修理キット（パンク修理等）</li>
+      <li>明るい色の服装・反射材</li>
+    </ul>
+
+    <h2>🌧 雨天やトラブル時の判断</h2>
+    <h3>天候判断</h3>
+    <ul>
+      <li>
+        無理せず天候をチェック（<a
+          href="https://www.jma.go.jp/bosai/nowc/"
+          target="_blank"
+          >気象庁レーダー</a
+        >）
+      </li>
+      <li><strong>雨天時</strong>：制動距離が伸びる・視界が悪化</li>
+      <li><strong>強風時</strong>：横風で転倒リスク増大</li>
+      <li><strong>夜間</strong>：視認性低下・前照灯は必須</li>
+    </ul>
+
+    <h3>トラブル対応</h3>
+    <ul>
+      <li>万一のトラブルはメンバーや公共交通を利用して対応</li>
+      <li>一人で無理をせず<strong>仲間と連携</strong></li>
+      <li>緊急時は<strong>110番・119番</strong>をためらわない</li>
+    </ul>
+
+    <h2>🚨 緊急時・事故対応</h2>
+    <h3>事故発生時の対応手順</h3>
+    <ul>
+      <li><strong>1. 安全確保</strong>：二次災害防止のため安全な場所へ</li>
+      <li><strong>2. けが人救護</strong>：119番通報・応急処置</li>
+      <li><strong>3. 警察への通報</strong>：110番（軽微でも必要）</li>
+      <li><strong>4. 証拠保全</strong>：写真撮影・目撃者の確保</li>
+      <li><strong>5. 保険会社連絡</strong>：自転車保険の報告</li>
+    </ul>
+
+    <h3>自転車保険の重要性</h3>
+    <p>
+      多くの自治体で<strong>自転車保険加入が義務化</strong>されています。対人・対物事故で高額賠償になる可能性があります。
+    </p>
+
+    <h2>🔗 参考リンク集</h2>
+    <div class="link-box">
+      <h3>📚 公的機関・法令関連</h3>
+      <ul>
+        <li>
+          <a
+            href="https://www.keishicho.metro.tokyo.lg.jp/kotsu/jikoboshi/bicycle/rule.html"
+            target="_blank"
+            >警視庁：自転車安全利用五則</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.gov-online.go.jp/article/202410/entry-6604.html"
+            target="_blank"
+            >政府広報：2024年法改正について</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.jitensha-kyokai.jp/jitensha_info/rule/"
+            target="_blank"
+            >自転車協会：交通ルールまとめ</a
+          >
+        </li>
+        <li>
+          <a href="https://www.bpaj.or.jp/safety/" target="_blank"
+            >日本自転車普及協会：安全な乗り方</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="link-box">
+      <h3>🔧 メンテナンス・技術情報</h3>
+      <ul>
+        <li>
+          <a href="https://cycle-info.bpaj.or.jp/" target="_blank"
+            >自転車文化センター：写真で学ぶ交通ルール</a
+          >
+        </li>
+        <li>
+          <a href="https://www.jma.go.jp/bosai/nowc/" target="_blank"
+            >気象庁：雨雲レーダー</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="accent-box">
+      <h2>🧑‍🤝‍🧑 Tabi-Ride 独自の「思いやりルール」</h2>
+      <ul>
+        <li>すれ違いざまの「こんにちは！」を大切に</li>
+        <li>困ってる人にはひと声かける文化を</li>
+        <li>初心者やグループ外ライダーへのリスペクトを忘れずに</li>
+        <li>地域住民への感謝の気持ちを忘れずに</li>
+        <li>自然環境を大切にする心構え</li>
+      </ul>
+
+      <h2>📋 出発前チェックリスト</h2>
+      <div class="link-box">
+        <h3>✅ 車体チェック</h3>
+        <ul>
+          <li>□ タイヤの空気圧は適正？</li>
+          <li>□ ブレーキは効く？</li>
+          <li>□ ライト・ベルは動作OK？</li>
+          <li>□ チェーンに注油済み？</li>
+        </ul>
+
+        <h3>✅ 装備チェック</h3>
+        <ul>
+          <li>□ ヘルメット着用</li>
+          <li>□ 水分・補給食準備</li>
+          <li>□ 修理キット携行</li>
+          <li>□ 緊急連絡先の確認</li>
+        </ul>
+
+        <h3>✅ 心構えチェック</h3>
+        <ul>
+          <li>□ 体調は良好？</li>
+          <li>□ 天候確認済み？</li>
+          <li>□ ルートの安全確認済み？</li>
+          <li>□ 交通ルールを再確認</li>
+        </ul>
+      </div>
+
+      <nav style="margin-top: 2em; text-align: center">
+        <h3>🌐 サイト内ナビゲーション</h3>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            flex-wrap: wrap;
+            margin-top: 1em;
+          "
+        >
+          <button class="nav-button" onclick="closeAndNavigate('./index.html')">
+            ページを閉じてトップへ
+          </button>
+          <button
+            class="nav-button"
+            onclick="replaceWithIndex('./index.html')"
+            style="background: #2c5aa0"
+          >
+            トップページへ移動
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer">
+      ※一部情報は<a
+        href="https://www.keishicho.metro.tokyo.lg.jp/"
+        target="_blank"
+        >警視庁</a
+      >等の公的機関より引用しています。
+    </div>
+
+    <script>
+      function closeAndNavigate(url) {
+        // ユーザーに確認してからページを閉じる/遷移する
+        if (confirm("現在のページを閉じてトップページに移動しますか？")) {
+          // まずページを閉じようと試行
+          if (window.close) {
+            window.close();
+          }
+
+          // 閉じられない場合は新しいタブで開いてから現在のページをabout:blankに
+          setTimeout(() => {
+            window.open(url, "_blank");
+            window.location.href = "about:blank";
+          }, 100);
+        }
+      }
+
+      // 代替案：ページを置き換える方法
+      function replaceWithIndex(url) {
+        // 現在のページを履歴から完全に置き換える
+        window.location.replace(url);
+      }
+    </script>
+  </body>
+</html>
